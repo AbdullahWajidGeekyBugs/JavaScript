@@ -184,7 +184,7 @@
 //     return newArray;
 //     }
 //     console.log(stringChop(myString, 0));
-// method 3 reduce method    
+// method 3 reduce method
 //     function stringChop(str, n) {
 //     let newArray = [];
 //     if (n > 0) {
@@ -197,7 +197,7 @@
 //                 return acc.concat(',',currentValue)
 //             }
 //         }, '')
-//     } 
+//     }
 //     else {
 //         return [str];
 //     }
@@ -207,7 +207,7 @@
 
 // task 6
 // Reverse a string
-//     myString = "Reverse a string"; 
+//     myString = "Reverse a string";
 //     function reverseString(str){
 //         let letters = str.split('');
 //         return strReverse = letters.reverse().join('')
@@ -215,14 +215,14 @@
 //     console.log(reverseString(myString));
 
 // method 2
-//     myString = "Reverse a string"; 
+//     myString = "Reverse a string";
 //     function reverseString(str){
-//         return str.split('').reverse().join('');    
+//         return str.split('').reverse().join('');
 //     }
 //     console.log(reverseString(myString));
 
 // method 3 for loop
-// myString = "Reverse a string"; 
+// myString = "Reverse a string";
 // function reverseString(str){
 //     let newString = '';
 //     for(let i= str.length-1 ;i>= 0 ; i--){
@@ -232,11 +232,10 @@
 // }
 // console.log(reverseString(myString));
 
-
 // task 7
-// create a string using the middle three charecters 
+// create a string using the middle three charecters
 // myString = "create a string using the middle three charecters";
-// method 1 
+// method 1
 // function middleThree(str){
 //     if (str.length % 2 === 0){
 //         return str;
@@ -287,12 +286,12 @@
 // }
 // console.log(PR(myString));
 
-// task 9 
+// task 9
 // Insert a string within a specific position i another string
 // method 1
 // function insert(mainString, insertString, position){
 //     if(typeof(position)=== 'undefined'){
-//         position = 0; 
+//         position = 0;
 //     }
 //     if(typeof(insertString) === 'undefined'){
 //         insertString = ' ';
@@ -304,7 +303,7 @@
 // Task 10
 // Count the occerence of a substring in a string
 // myString = "Count the occerence of a substring in a string";
-// method 1 
+// method 1
 // function count(str, find){
 //     let myStr = str.toLowerCase().split(' ');
 //     return myStr.reduce(function(acc,current){
@@ -327,3 +326,110 @@
 //     }).length
 //     }
 //     console.log(count(myString, 'a'));
+
+//task 11
+//Repeat a string a specific time
+//myString = "Repeat a string a specific time ";
+//method 1 repeat function
+// function repeatString(str, count){
+//     if ((str == null) || (count == null) || (count === Infinity) || (count < 0)){
+//         return "ERROR OR INVALID INPUT";
+//     }
+//     else{
+//         return str.repeat(count)
+//     }
+// }
+// console.log(repeatString(myString,1));
+
+//method 2 for loop
+// function repeatString(str, count) {
+//   if (str == null || count == null || count === Infinity || count < 0) {
+//     return "ERROR OR INVALID INPUT";
+//   } else {
+//     let text = "";
+//     for (let i = 0; i < count; i++) {
+//       text += str;
+//     }
+//     return text;
+//   }
+// }
+
+// console.log(repeatString(myString, 3));
+
+//method 3 foor loop and push
+// function repeatString(str, count) {
+//     if (str == null || count == null || count === Infinity || count < 0) {
+//       return "ERROR OR INVALID INPUT";
+//     } else {
+//       let text = [];
+//       for (let i = 0; i < count; i++) {
+//         text.push(str);
+//       }
+//       return text.join('');
+//     }
+//   }
+  
+//   console.log(repeatString(myString, 3));
+
+//Task 12
+//Trunculate a string to a certain number of words
+//myString = "Trunculate a string to a certain number of words";
+//method 1 slice function
+// function trunculate(str, limit) {
+//     let myStr = str.split(' ');
+//     //return myStr.slice(0,limit).join(' ');
+//     return myStr.splice(0, limit).join(' ');
+
+// }
+// console.log(trunculate(myString,4));
+// method 2  for loop 
+// function trunculate(str, limit) {
+//     let myStr = str.split(' ');
+//     let newArray = [];
+//     let i = 0;
+//     for(let value of myStr){
+//         if(i === limit){
+//             3 === 3
+//             break;
+//         }
+//         newArray.push(value);
+//         i++;
+//     }
+//     return newArray.join(' ');
+// }
+// console.log(trunculate(myString,3));
+
+//Task 13 
+//Alphabetize a given string
+//myString = "Alphabetize a given string";
+//method 1
+// function alphabetize(str){
+//     let myStr = str.split('');
+//     return myStr.sort().join('').trim();
+// }
+// console.log(alphabetize(myString));
+
+//method 2 fol loop
+// function alphabetize(str){
+//     let myStr = str.split('');
+//     let temp 
+//     for ( let i = 0; i < myStr.length; i++){
+//         for( let j = i + 1; j < myStr.length ; j++){
+//             if (myStr[i]>myStr[j]){
+//                 temp = myStr[i];
+//                 myStr[i] = myStr[j];
+//                 myStr[j] = temp;
+//             }
+//         }
+//     }
+//     return myStr.join('');
+// }
+// console.log(alphabetize(myString));
+
+//Task 14
+//Factorialize a Number in Javascript
+//method 1
+//function factorialize(num) {
+    
+//}
+//console.log(factorialize(number));  

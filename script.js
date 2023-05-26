@@ -368,7 +368,7 @@
 //       return text.join('');
 //     }
 //   }
-  
+
 //   console.log(repeatString(myString, 3));
 
 //Task 12
@@ -382,7 +382,7 @@
 
 // }
 // console.log(trunculate(myString,4));
-// method 2  for loop 
+// method 2  for loop
 // function trunculate(str, limit) {
 //     let myStr = str.split(' ');
 //     let newArray = [];
@@ -399,7 +399,7 @@
 // }
 // console.log(trunculate(myString,3));
 
-//Task 13 
+//Task 13
 //Alphabetize a given string
 //myString = "Alphabetize a given string";
 //method 1
@@ -412,7 +412,7 @@
 //method 2 fol loop
 // function alphabetize(str){
 //     let myStr = str.split('');
-//     let temp 
+//     let temp
 //     for ( let i = 0; i < myStr.length; i++){
 //         for( let j = i + 1; j < myStr.length ; j++){
 //             if (myStr[i]>myStr[j]){
@@ -430,16 +430,16 @@
 //Factorialize a Number in Javascript
 //method 1
 // function factorialize(num) {
-//     let result = 1 
+//     let result = 1
 //     for (let i = 1; i <= num; i++ ){
 //         result = result * i;
 //     }
 //     return result;
 // }
-// console.log(factorialize(0));  
+// console.log(factorialize(0));
 //method 2
 // function factorialize(num) {
-//     let result = 1; 
+//     let result = 1;
 //     if (num === 0 || num === 1){
 //         return 1;
 //     }
@@ -448,27 +448,89 @@
 //     }
 //     return result;
 // }
-// console.log(factorialize(0));  
+// console.log(factorialize(0));
 
 //Task 15
 //slasher
 //method 1
 //  let myArr = [1, 2, 3 , 4, 5, 6, 7, 8, 9];
 // console.log(myArr.slice(1))
-//method 2 by function 
+//method 2 by function
 // function slasher(arr, howMany){
 //     return arr.slice(howMany);
 // }
 // console.log(slasher(myArr, 2))
 
-//method 3 
+//method 3
 // function slasher(arr, howMany){
 //     return arr.splice(howMany);
 // }
 // console.log(slasher(myArr, 2))
 
+//Task 16
+//Mutation of Array
+//myArray = ["hello", "Hel"];
+//method 1
 
+// function Mutation(arr){
+//     let firstWord = arr[0].toLowerCase();
+//     let secondWord = arr[1].toLowerCase();
+//     for (let i = 0; i < secondWord.length; i++) {
+//       console.log(secondWord[i]);
 
+//     }
+// }
+// console.log(Mutation(['hello','Hel']))
 
+//method 2
+//let myStr = 'hello';
+//console.log(myStr.indexOf('o'));
+//
+//method 2
 
+// function Mutation(arr){
+//     let firstWord = arr[0].toLowerCase();
+//     let secondWord = arr[1].toLowerCase();
+//     for (let i = 0; i < secondWord.length; i++) {
+//       if(!firstWord.includes(secondWord)){
+//         return false;
+//       }
 
+//     }
+//     return true;
+// }
+// console.log(Mutation(['hello','Hello']));
+
+//Task 17
+//Falsy Bouncer
+//myArray = [ 7, "hello", null, false, "ha  "];
+// Method 1
+
+// function falsyBouncer(arr){
+//     let newArr = [];
+//     for(let i = 0 ; i < arr.length ; i++){
+//         if (arr[i]){
+    //         }
+//             newArr.push(arr[i])
+
+//     }
+//     return newArr;
+// }
+// console.log(falsyBouncer(myArray));
+
+//Task 18
+//Destroyer
+// myArray = [1, 2];
+// function destroyer(arr) {
+//   let args = Array.from(arguments);
+//   args.splice(0, 1);
+//   let targets = args;
+//   let result = [];
+//   for (let num of arr){ 
+//   if (targets.indexOf(num) === -1) {
+//         result.push(num);
+//     }
+//   }
+//   return result; 
+// }
+// console.log(destroyer(myArray, 2));

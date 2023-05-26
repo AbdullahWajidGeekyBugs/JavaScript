@@ -429,7 +429,46 @@
 //Task 14
 //Factorialize a Number in Javascript
 //method 1
-//function factorialize(num) {
-    
-//}
-//console.log(factorialize(number));  
+// function factorialize(num) {
+//     let result = 1 
+//     for (let i = 1; i <= num; i++ ){
+//         result = result * i;
+//     }
+//     return result;
+// }
+// console.log(factorialize(0));  
+//method 2
+// function factorialize(num) {
+//     let result = 1; 
+//     if (num === 0 || num === 1){
+//         return 1;
+//     }
+//     for (let i = num; i >= 1; i-- ){
+//         result = result * i;
+//     }
+//     return result;
+// }
+// console.log(factorialize(0));  
+
+//Task 15
+//slasher
+//method 1
+//  let myArr = [1, 2, 3 , 4, 5, 6, 7, 8, 9];
+// console.log(myArr.slice(1))
+//method 2 by function 
+// function slasher(arr, howMany){
+//     return arr.slice(howMany);
+// }
+// console.log(slasher(myArr, 2))
+
+//method 3 
+// function slasher(arr, howMany){
+//     return arr.splice(howMany);
+// }
+// console.log(slasher(myArr, 2))
+
+
+
+
+
+
